@@ -1,0 +1,15 @@
+{
+  "name": "e2e-test-automation",
+  "version": "1.0.0",
+  "description": "Cypress E2E test suite",
+  "scripts": {
+    "test": "cypress run",
+    "test:open": "cypress open",
+    "test:auth": "cypress run --spec 'cypress/e2e/auth/**'",
+    "test:dashboard": "cypress run --spec 'cypress/e2e/dashboard/**'"
+  },
+  "devDependencies": {
+    "cypress": "^13.6.0",
+    "@cypress/code-coverage": "^3.12.0"
+  }
+}
